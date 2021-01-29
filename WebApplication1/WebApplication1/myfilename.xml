@@ -1,0 +1,127 @@
+<?xml version="1.0"?>
+<AggregatedMeteringDataReport xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="AggregatedMeteringDataReport.xsd">
+  <DocumentIdentification v="10120309075243" />
+  <SenderIdentification v="10X1001A1001A39W" />
+  <ReceiverIdentification v="10X1001A1001A39W" />
+  <DocumentDateTime v="2012-02-05T07:52:43Z" />
+  <PortfolioCustomerIdentification v="GRIDOPERATOR-EIC" />
+  <TimeSeries>
+    <MeasurementUnit v="KWH" />
+    <Period>
+      <TimeInterval v="2012-01-31T00:00Z/2012-01-31T10:00Z" />
+      <Resolution v="PT1H" />
+      <AccountInterval>
+        <Pos v="1" />
+        <MeasurementUnit v="KWH">
+          <OutQty v="144" />
+          <InQty v="000.1" />
+        </MeasurementUnit>
+        <MeasurementUnit v="M3">
+          <OutQty v="144" />
+          <InQty v="000.1" />
+        </MeasurementUnit>
+        <Missing v="1" />
+      </AccountInterval>
+      <AccountInterval>
+        <Pos v="2" />
+        <MeasurementUnit v="KWH">
+          <OutQty v="123" />
+          <InQty v="000.02" />
+        </MeasurementUnit>
+        <MeasurementUnit v="M3">
+          <OutQty v="123" />
+          <InQty v="000.02" />
+        </MeasurementUnit>
+        <Missing v="1" />
+      </AccountInterval>
+      <AccountInterval>
+        <Pos v="3" />
+        <MeasurementUnit v="KWH">
+          <OutQty v="171" />
+          <InQty v="000.003" />
+        </MeasurementUnit>
+        <MeasurementUnit v="M3">
+          <OutQty v="171" />
+          <InQty v="000.003" />
+        </MeasurementUnit>
+        <Missing v="1" />
+      </AccountInterval>
+      <AccountInterval>
+        <Pos v="4" />
+        <Missing v="2" />
+      </AccountInterval>
+      <AccountInterval>
+        <Pos v="5" />
+        <MeasurementUnit v="KWH">
+          <OutQty v="639" />
+          <InQty v="2" />
+        </MeasurementUnit>
+        <MeasurementUnit v="M3">
+          <OutQty v="639" />
+          <InQty v="2" />
+        </MeasurementUnit>
+        <Missing v="0" />
+      </AccountInterval>
+      <AccountInterval>
+        <Pos v="6" />
+        <MeasurementUnit v="KWH">
+          <OutQty v="640" />
+          <InQty v="000" />
+        </MeasurementUnit>
+        <MeasurementUnit v="M3">
+          <OutQty v="640" />
+          <InQty v="000" />
+        </MeasurementUnit>
+        <Missing v="0" />
+      </AccountInterval>
+      <AccountInterval>
+        <Pos v="7" />
+        <MeasurementUnit v="KWH">
+          <OutQty v="1123" />
+          <InQty v="000" />
+        </MeasurementUnit>
+        <MeasurementUnit v="M3">
+          <OutQty v="1123" />
+          <InQty v="000" />
+        </MeasurementUnit>
+        <Missing v="0" />
+      </AccountInterval>
+      <AccountInterval>
+        <Pos v="8" />
+        <MeasurementUnit v="KWH">
+          <OutQty v="1656" />
+          <InQty v="000" />
+        </MeasurementUnit>
+        <MeasurementUnit v="M3">
+          <OutQty v="1656" />
+          <InQty v="000" />
+        </MeasurementUnit>
+        <Missing v="0" />
+      </AccountInterval>
+      <AccountInterval>
+        <Pos v="9" />
+        <MeasurementUnit v="KWH">
+          <OutQty v="1407" />
+          <InQty v="000" />
+        </MeasurementUnit>
+        <MeasurementUnit v="M3">
+          <OutQty v="1407" />
+          <InQty v="000" />
+        </MeasurementUnit>
+        <Missing v="0" />
+      </AccountInterval>
+      <AccountInterval>
+        <Pos v="10" />
+        <MeasurementUnit v="KWH">
+          <OutQty v="970" />
+          <InQty v="000" />
+        </MeasurementUnit>
+        <MeasurementUnit v="M3">
+          <OutQty v="970" />
+          <InQty v="000" />
+        </MeasurementUnit>
+        <Missing v="0" />
+      </AccountInterval>
+    </Period>
+  </TimeSeries>
+</AggregatedMeteringDataReport>

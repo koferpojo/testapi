@@ -1,0 +1,36 @@
+﻿<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <xsd:redefine schemaLocation="common.xsd">
+    <xsd:complexType name="AccountInterval_type">
+      <xsd:complexContent>
+        <xsd:extension base="AccountInterval_type">
+          <xsd:sequence>
+            <xsd:element name="Missing" type="Integer_type"/>
+          </xsd:sequence>
+        </xsd:extension>
+      </xsd:complexContent>
+    </xsd:complexType>
+  </xsd:redefine>
+
+  <xsd:element name="AggregatedMeteringDataReport">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="DocumentIdentification" type="DocumentIdentification_type"/>
+        <xsd:element name="SenderIdentification" type="EICIdentification_type"/>
+        <xsd:element name="ReceiverIdentification" type="EICIdentification_type"/>
+        <xsd:element name="DocumentDateTime" type="DocumentDateTime_type"/>
+        <xsd:element name="PortfolioCustomerIdentification" type="EICIdentification_type"/>
+        <xsd:element name="TimeSeries" type="TimeSeries_type"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+
+  <xsd:complexType name="TimeSeries_type">
+    <xsd:sequence>
+      <xsd:element name="MeasurementUnit" type="MeasurementUnit_type"/>
+      <xsd:element name="Period" type="Period_type" maxOccurs="unbounded"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+</xsd:schema>

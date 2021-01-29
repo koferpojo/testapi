@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <xsd:include schemaLocation="common.xsd"/>
+
+  <xsd:element name="BalanceState">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="DocumentIdentification" type="DocumentIdentification_type"/>
+        <xsd:element name="SenderIdentification" type="EICIdentification_type"/>
+        <xsd:element name="ReceiverIdentification" type="EICIdentification_type"/>
+        <xsd:element name="DocumentDateTime" type="DocumentDateTime_type"/>
+        <xsd:element name="Added" type="Added_type" minOccurs="0"/>
+        <xsd:element name="Removed" type="Removed_type" minOccurs="0"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+
+  <xsd:complexType name="Added_type">
+    <xsd:complexContent>
+      <xsd:extension base="BalancePointsList_type">
+        <xsd:attribute name="firstDate" type="xsd:date"/>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+
+  <xsd:complexType name="Removed_type">
+    <xsd:complexContent>
+      <xsd:extension base="BalancePointsList_type">
+        <xsd:attribute name="lastDate" type="xsd:date"/>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+
+  <xsd:complexType name="BalancePointsList_type">
+    <xsd:sequence>
+      <xsd:element name="BalancePoint" type="BalancePoint_type" maxOccurs="unbounded"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="BalancePoint_type">
+    <xsd:sequence>
+      <xsd:element name="MeteringPointIdentification" type="EICIdentification_type"/>
+      <xsd:element name="GridOperatorIdentification" type="EICIdentification_type"/>
+      <xsd:element name="OpenSupplierBalanceProviderIdentification" type="EICIdentification_type"/>
+      <xsd:element name="GridOperatorBalanceProviderIdentification" type="EICIdentification_type"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+</xsd:schema>

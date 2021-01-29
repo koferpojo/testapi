@@ -1,0 +1,23 @@
+﻿<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" >
+
+  <xsd:include schemaLocation="common.xsd"/>
+
+  <xsd:element name="NotifySupplyAgreement">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="DocumentIdentification" type="DocumentIdentification_type" />
+        <xsd:element name="SenderIdentification" type="EICIdentification_type"/>
+        <xsd:element name="ReceiverIdentification" type="EICIdentification_type"/>
+        <xsd:element name="DocumentDateTime" type="DocumentDateTime_type"/>
+        <xsd:element name="OpenSupplierIdentification" type="EICIdentification_type" minOccurs="0"/>
+        <xsd:element name="CustomerIdentification" type="EICIdentification_type" minOccurs="0"/>
+        <xsd:element name="FirstDate" type="xsd:date"/>
+        <xsd:element name="LastDate" type="xsd:date" minOccurs="0"/>
+        <xsd:element name="Reason" type="NotifySupplyAgreementReason_type" minOccurs="0"/>
+        <xsd:element name="MeteringPointIdentification" type="EICIdentification_type" maxOccurs="unbounded"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+
+</xsd:schema>

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" >
+
+  <xsd:include schemaLocation="common.xsd"/>
+
+  <xsd:element name="RequestMeteringDataHistory">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="DocumentIdentification" type="DocumentIdentification_type" />
+        <xsd:element name="SenderIdentification" type="EICIdentification_type"/>
+        <xsd:element name="ReceiverIdentification" type="EICIdentification_type"/>
+        <xsd:element name="DocumentDateTime" type="DocumentDateTime_type"/>
+        <xsd:element name="MeteringPointIdentification" type="EICIdentification_type"/>
+        <xsd:element name="CustomerIdentification" type="EICIdentification_type"/>
+        <xsd:element name="CustomerAuthorization" type="boolean_type"/>
+        <xsd:element name="MeteringPeriod" type="TimeInterval_type" minOccurs="0" maxOccurs="1"/>
+        <xsd:element name="Resolution" type="Resolution_type" minOccurs="0" maxOccurs="1"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+
+</xsd:schema>
